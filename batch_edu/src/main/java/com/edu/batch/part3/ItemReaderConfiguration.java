@@ -1,10 +1,8 @@
 package com.edu.batch.part3;
 
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -62,7 +60,6 @@ public class ItemReaderConfiguration {
 		itemReader.afterPropertiesSet();
 		
 		return itemReader;
-		
 	}
 	
 }
